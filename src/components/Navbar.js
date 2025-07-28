@@ -1,19 +1,20 @@
-// src/components/Navbar.jsx
-import "./Navbar.css";
+import './Navbar.css'
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="logo">Harry Jung</div>
-      <ul className="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav className = "Navbar">
+      <div className = "Logo">Harry Jung</div>
+      <ul className = "nav-links">
+        <li><a href = "#About">About Me</a></li>
+        <li><a href = "#Timeline">Timeline</a></li>
+        <li><a href = "#Education">Education</a></li>
+        <li><a href = "#Experience">Experience</a></li>
+        <li><a href = "#Projects">Projects</a></li>
+        <li><a href = "#Skills">Skills</a></li>
+        <li><a href = "#Hobbies">Hobbies</a></li>
+        <li><a href = "#Contact">Contact Me</a></li>
       </ul>
     </nav>
+
   );
 }
