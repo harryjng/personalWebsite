@@ -1,15 +1,12 @@
 import './App.css';
-import profileImage from './assets/gradShot.jpg';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+
 function App() {
   return (
     <div className="App">
-      <Navbar />       
-      <header className="App-header">
-        <img src={profileImage} alt="profile" className="profile-img"/>
-        Welcome to Harry's personal space!
-      </header>
-      <section id="About" className="section">About Me</section>
+      <Navbar />     
+      <Hero />  
       <section id="Timeline" className="section">Timeline</section>
       <section id="Education" className="section">Education</section>
       <section id="Experience" className="section">Experience</section>

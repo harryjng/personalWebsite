@@ -6,8 +6,12 @@
   top: 0;
   align-items: center;
   z-index: 1000;
-  padding: 0rem 1rem;
+  padding-right: 1rem;
+}
 
+.LogoIMG {
+  width: 5rem;
+  height: 5rem;
 }
 
 .Logo {
@@ -17,6 +21,12 @@
   font-family: 'Playfair Display', serif;
 }
 
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -24,15 +34,15 @@
 }
 
 .nav-links a {
-  color: #D2C1B6;
+  color: #F9F3EF;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 550;
 
 }
 
 .nav-links a:hover {
-  color: #F9F3EF;
-  border-bottom: 2px solid #F9F3EF;
+  color: #D2C1B6;
+  border-bottom: 2px solid #D2C1B6;
 
 }

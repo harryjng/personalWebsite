@@ -1,11 +1,15 @@
 import './Navbar.css'
+import Logo from '../assets/HJLOGO.png'
 
 export default function Navbar() {
   return (
     <nav className = "Navbar">
+      <div className='logoGroup'>
+      <img src = {Logo} alt = "Name Logo" className = "LogoIMG"/>
       <div className = "Logo">Harry Jung</div>
+      </div>
       <ul className = "nav-links">
-        <li><a href = "#About">About Me</a></li>
+        <li><a href = "#Welcome">Welcome</a></li>
         <li><a href = "#Timeline">Timeline</a></li>
         <li><a href = "#Education">Education</a></li>
         <li><a href = "#Experience">Experience</a></li>
