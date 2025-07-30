@@ -3,7 +3,7 @@
   text-align: center;
   border-bottom: 1px solid #D2C1B6;
   scroll-margin-top: 5rem;
-  min-height: calc(100vh - 5rem - 3rem);
+  min-height: calc(100dvh - 5rem - 3rem);
   padding-top: 3rem;
   background-image: url(/src/assets/background3.jpg);
   background-size: cover;
