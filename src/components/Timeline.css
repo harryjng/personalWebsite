@@ -8,13 +8,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #00002a;
+  background-color: #F8F7F4;
   border-bottom: 1px solid #D2C1B6;
-  color: #F9F3EF;
-  background-image: url(/src/assets/TimelineBackground.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: #4271DE;
 }
 
 .timeline-bar {
@@ -22,7 +18,7 @@
   overflow-x: auto;
   padding: 1rem 0;
   position: relative;
-  border-top: 2px solid #BFAC9F;
+  border-top: 2px solid #4271DE;
   width: 100%;
   max-width: 56rem;
   gap: 3rem;
@@ -42,21 +38,21 @@
 .event-marker {
   width: 16px;
   height: 16px;
-  background-color: rgba(249, 243, 239, 0.9);  border-radius: 50%;
-  border: 2px solid #BFAC9F;
+  background-color: rgba(248, 247, 244, 0);  border-radius: 50%;
+  border: 2px solid #4271DE;
   margin: 0 auto;
   margin-top: -9px;
 }
 
 .timeline-event.active .event-marker {
-  background-color: #33d06f; /* Green */
+  background-color: #BFD2F9; /* Green */
   transform: scale(1.2);
 }
 
 .event-date {
   margin-top: 8px;
   font-size: 0.85rem;
-  color: #D2C1B6;
+  color: #4271DE;
   font-weight: bold;
 }
 
@@ -77,6 +73,8 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   position: relative;
+  border: 2px solid #4271DE;
+  color: #4271DE;
 }
 
 
@@ -102,7 +100,7 @@
   margin-top: 0.75rem;
   margin-bottom: -1rem;
   font-size: 1.3rem;
-  color: #1B3C53;
+  color: #4271DE;
 }
 
 .close-button {
@@ -112,14 +110,14 @@
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #1B3C53;
+  color: #4271DE;
   cursor: pointer;
   z-index: 1000;
   font-weight: bold;
 }
 
 .close-button:hover {
-  color: #e53935; /* red on hover */
+  color: #BFD2F9; /* red on hover */
 }
 
 @keyframes fadeIn {

@@ -1,0 +1,14 @@
+.about-section {
+    padding-top: 3rem;
+    height: 100vh;
+    margin-right: 6.6rem;
+  color: #7e8597; /* Default text color */
+  line-height: 1.5;
+  font-size: 105%;
+
+}
+
+
+.highlight-word {
+    color: #f2f4f8;
+}

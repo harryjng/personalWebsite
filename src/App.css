@@ -1,24 +1,58 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-header {
-  background-color: #F9F3EF;
+.split-layout {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: #1B3C53;
-  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* Left column: fixed */
+/* .left-fixed {
+  width: 44vw;
+  min-width: 280px;
+  max-width: 649px;
+  height: 100vh;
+  background-color: #F8F7F4;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+} */
+
+.left-fixed {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden; /* no scrollbars */
+  width: 47vw;
+  min-width: 400px;
+  max-width: 690px;
+}
+
+
+/* Right column: scrollable */
+.right-scrollable {
+
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 2rem;
+  scroll-behavior: smooth;
+  background-color: #111729;
+}
+
+/* Optional: section spacing */
 .section {
-  scroll-margin-top: 5rem;
-  font-family: 'Poppins', sans-serif;
-  color: #1B3C53;
-  background-color: #F9F3EF;
-  border-bottom: 1px solid #D2C1B6;
-  min-height: calc(100vh - 5rem - 2rem);
-  padding-top: 2rem;
+  padding: 4rem 0;
+  height: 100vh;
+  color: #f2f4f8;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
 
 }

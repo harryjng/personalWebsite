@@ -1,0 +1,69 @@
+/* Navbar.css */
+
+.Navbar {
+  justify-content: space-between;
+  display: flex;
+  background-color: #F8F7F4;
+  position: sticky;
+  top: 0; /* Assuming you want it at the top again for a standard navbar */
+  /* If you want it at the bottom, change to bottom: 0; as discussed before */
+  align-items: center;
+  z-index: 1000;
+  padding-right: 1rem;
+  overflow-x: auto;
+  /* Add padding-left if you want space on the left side of the lines */
+  padding-left: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  margin-top: 4.4rem;
+  margin-left: 6.6rem; /* This margin will push the whole list to the right */
+  padding: 0; /* Remove default padding from ul */
+
+  display: flex;
+  flex-direction: column; /* To stack links vertically */
+  gap: 1rem; /* Space between the links */
+}
+
+.nav-links li {
+  /* Set li to relative positioning to contain the ::before pseudo-element */
+  position: relative;
+  display: flex; /* Use flexbox to align the line and text horizontally */
+  align-items: center; /* Vertically center line and text */
+}
+
+.nav-links li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #4271DE; /* Your desired text color */
+  padding: 0.2rem 0; /* Add some vertical padding for click area, if needed */
+  /* This margin pushes the text away from the line */
+  margin-left: 0.8rem; /* Space between the line and the text */
+  white-space: nowrap; /* Prevent text from wrapping if it gets too long */
+}
+
+/* The Line using ::before pseudo-element */
+.nav-links li::before {
+  content: ''; /* Essential for pseudo-elements */
+  display: block; /* Make it a block element to control width/height */
+  height: 1px; /* Thickness of the line */
+  background-color: #4271DE; /* Color of the line */
+  width: 2rem; /* Initial length of the line */
+  transition: width 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect: Extend the line */
+.nav-links li:hover::before {
+  width: 4rem; /* Extend the line to 4rem on hover */
+  /* You can also subtly change its color on hover if desired */
+  /* background-color: #648AFB; */
+}
+
+/* Optional: Style for the active/current page */
+.nav-links li a.active {
+  color: #3358AF; /* Example: a darker blue for active state */
+  font-weight: bold; /* Make active link bold */
+}
+
+/* Ensure that when the line extends, it doesn't push the entire navbar
+   or cause overflow issues. Adjust max-width or overall layout if needed. */
