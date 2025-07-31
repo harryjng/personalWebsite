@@ -66,7 +66,7 @@
 
 .nav-links li:hover::before {
   background-color: #e2e8f0; /* Line color on hover */
-  width: 4rem; /* Line extension on hover */
+  width: 4.5rem; /* Line extension on hover */
   height: 1.5px;
 }
 
