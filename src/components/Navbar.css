@@ -73,13 +73,12 @@
 /* When the LI has the 'active' class (meaning it's the current page) */
 .nav-links li.active a {
   color: #e2e8f0; /* Active page text color */
-  /* font-weight: bold; - Removed here, as it's already in .nav-links for consistency */
 }
 
 .nav-links li.active::before {
   background-color: #e2e8f0; /* Active page line color */
   /* If you want the active line to also be extended, uncomment the line below */
-  /* width: 4rem; */
+  width: 4rem;
 }
 
 /* ========================================================= */
