@@ -3,14 +3,14 @@
 .Navbar {
   justify-content: space-between;
   display: flex;
-  background-color: #111729;
+  background-color: rgb(15 23 42);
   position: sticky;
   top: 0;
   align-items: center;
   z-index: 0;
   padding-right: 1rem;
   overflow-x: auto;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   margin-top: -0.5rem;
   list-style-type: none;
   margin-left: 6.6rem;
@@ -38,7 +38,7 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: #7e8597; /* Default text color */
+  color: rgb(148 163 184); /* Default text color */
   padding: 0.2rem 0;
   margin-left: 0.8rem;
   white-space: nowrap;
@@ -50,7 +50,7 @@
   content: '';
   display: block;
   height: 1px;
-  background-color: #7e8597; /* Default line color */
+  background-color: rgb(148 163 184); /* Default line color */
   width: 2rem; /* Initial length of the line */
   transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for width and line color */
 }
@@ -61,23 +61,23 @@
 
 /* When the LI is hovered */
 .nav-links li:hover a {
-  color: #f2f4f8; /* Text color on hover */
+  color: #e2e8f0; /* Text color on hover */
 }
 
 .nav-links li:hover::before {
-  background-color: #f2f4f8; /* Line color on hover */
+  background-color: #e2e8f0; /* Line color on hover */
   width: 4rem; /* Line extension on hover */
   height: 1.5px;
 }
 
 /* When the LI has the 'active' class (meaning it's the current page) */
 .nav-links li.active a {
-  color: #f2f4f8; /* Active page text color */
+  color: #e2e8f0; /* Active page text color */
   /* font-weight: bold; - Removed here, as it's already in .nav-links for consistency */
 }
 
 .nav-links li.active::before {
-  background-color: #f2f4f8; /* Active page line color */
+  background-color: #e2e8f0; /* Active page line color */
   /* If you want the active line to also be extended, uncomment the line below */
   /* width: 4rem; */
 }

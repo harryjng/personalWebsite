@@ -12,7 +12,6 @@ export default function Hero() {
         Passionate for building impactful technology. 
       </p>
       <Navbar />
-      <a href="#Contact" className="hero-cta fade-in">Click to Contact Form ↓</a>
     </section>
   );
 };

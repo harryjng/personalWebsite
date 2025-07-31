@@ -43,7 +43,7 @@ body, html, #root {
   overflow-y: scroll;
   padding: 2rem;
   scroll-behavior: smooth;
-  background-color: #111729;
+  background-color: rgb(15 23 42);
 }
 
 /* Optional: section spacing */
@@ -56,3 +56,16 @@ body, html, #root {
   font-family: 'Times New Roman', Times, serif;
 
 }
+
+/* Overlay spotlight that follows the cursor */
+#spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  pointer-events: none;
+  transition: background 0.05s ease-out; /* Smooth update */
+}
+

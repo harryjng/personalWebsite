@@ -2,13 +2,13 @@
     padding-top: 3rem;
     height: 100vh;
     margin-right: 6.6rem;
-  color: #7e8597; /* Default text color */
+  color: rgb(148 163 184); /* Default text color */
   line-height: 1.5;
-  font-size: 105%;
+  font-size: 17px;
 
 }
 
 
 .highlight-word {
-    color: #f2f4f8;
+    color: #e2e8f0;
 }
