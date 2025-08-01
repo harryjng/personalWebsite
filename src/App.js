@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import About from './components/About';
+import Platforms from './components/Platforms';
 
 function App() {
   useEffect(() => {
@@ -22,11 +23,11 @@ function App() {
       if (right) {
         e.preventDefault();
         e.stopPropagation();
-        
+
         // Use deltaY directly for immediate, 1:1 speed matching
         // This matches exactly what the browser would do natively
         right.scrollTop += e.deltaY;
-        
+
         // Alternative: If you want to match native scroll multiplier exactly
         // const scrollMultiplier = 3; // Adjust if needed to match your system
         // right.scrollTop += e.deltaY * scrollMultiplier;
@@ -35,12 +36,12 @@ function App() {
 
     // Add event listeners
     window.addEventListener('mousemove', handleMouseMove);
-    
+
     if (left && right) {
       // Use passive: false for immediate response without throttling
-      left.addEventListener('wheel', redirectScroll, { 
+      left.addEventListener('wheel', redirectScroll, {
         passive: false,
-        capture: false 
+        capture: false
       });
     }
 
@@ -58,6 +59,7 @@ function App() {
       <div id="spotlight" className="spotlight-overlay"></div>
       <aside className="left-fixed">
         <Hero />
+        <Platforms />
       </aside>
       <main className="right-scrollable">
         <About />
