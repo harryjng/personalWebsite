@@ -3,7 +3,7 @@ import './App.css';
 import Hero from './components/Hero';
 import About from './components/About';
 import Platforms from './components/Platforms';
-
+import Experience from './components/Experience';
 function App() {
   useEffect(() => {
     const spotlight = document.getElementById('spotlight');
@@ -63,7 +63,7 @@ function App() {
       </aside>
       <main className="right-scrollable">
         <About />
-        <section id="Experience" className="section">Experience</section>
+        <Experience />
         <section id="Projects" className="section">Projects</section>
         <section id="Contact" className="section">Contact Me</section>
       </main>
