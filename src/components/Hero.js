@@ -11,6 +11,8 @@ export default function Hero() {
       <p className="hero-description">
         Passionate for building impactful technology. 
       </p>
+      <p class="underline">This text is underlined.</p>
+
       <Navbar />
     </section>
   );
