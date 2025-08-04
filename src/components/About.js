@@ -3,11 +3,11 @@ import './About.css';
 export default function Hero() {
     return (
         <section id="AboutMe" className="about-section">
-            <div className='about'>
+            <div class="mb-4 font-medium text-slate-400 text-base leading-relaxed font-sans antialiased selection:bg-teal-300 selection:text-teal-900">
                 <p>
                     I’m a software engineer with a strong foundation in <a href="https://www.akima.com/opcos/cloud-lake-technology-data-analytics/" target="_blank" rel="noopener noreferrer" className='highlight-word'>full-stack development</a>, 
                     <a href="https://github.com/AwrodHaghiTabrizi/UMARV-CV-LaneDetection" target="_blank" rel="noopener noreferrer" className='highlight-word'> machine learning</a>, and <a href="https://zetapi.tech" target="_blank" rel="noopener noreferrer" className='highlight-word'>human-centered design</a>. I’m passionate about building impactful tools 
-                    from secure <a href="https://github.com/HostYourVoice/Skilt" target="_blank" rel="noopener noreferrer" className='highlight-word'>mobile apps</a> and AI-powered systems to real-time mapping platforms that solve real-world problems.
+                    from secure <a href="https://github.com/HostYourVoice/Skilt" target="_blank" rel="noopener noreferrer" className='highlight-word'>mobile apps</a> and AI-powered systems to real-time mapping platforms that solve real-world problems. <br /><br />
                 </p>
                 <p>
                     Currently, I’m a Software Engineer at <a href="http://akima.com" target="_blank" rel="noopener noreferrer" className='highlight-word'>Akima</a>, where I support federal 

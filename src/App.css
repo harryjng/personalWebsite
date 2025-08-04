@@ -3,6 +3,7 @@ body, html, #root {
   height: 100%;
   margin: 0;
   font-family: 'Inter', sans-serif;
+background-color: rgb(15 23 42);
 }
 
 .split-layout {
@@ -21,6 +22,7 @@ body, html, #root {
   max-width: 690px;
   /* Ensure the cursor shows it's interactive */
   cursor: grab;
+
 }
 
 .left-fixed:active {
