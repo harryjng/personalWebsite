@@ -5,6 +5,11 @@ body, html, #root {
   font-family: 'Inter', sans-serif;
 background-color: rgb(15 23 42);
 }
+/* Global selection styling */
+::selection {
+  background-color: rgb(94 234 212); /* teal-300 */
+  color: rgb(19 78 74); /* teal-900 */
+}
 
 .split-layout {
   display: flex;
@@ -35,9 +40,9 @@ background-color: rgb(15 23 42);
   height: 100vh;
   overflow-y: scroll;
   padding: 2rem;
-  scroll-behavior: auto; /* Remove smooth scrolling for instant response */
   background-color: rgb(15 23 42);
   /* Smooth scrollbar styling */
+  scroll-behavior: auto; /* Remove smooth scrolling for instant response */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }

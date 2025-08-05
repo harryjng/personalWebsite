@@ -3,6 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 6.6rem;
     align-items: baseline; /* This aligns the text baselines of the children */
+    padding-top: 4rem;
     margin-top: 4rem;
 }
 
@@ -25,8 +26,6 @@
     font-size: .75rem;
     font-weight: 600;
     white-space: nowrap; /* This is the key property */
-        line-height: 1rem;
-
 }
 
 .role {
