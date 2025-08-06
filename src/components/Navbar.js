@@ -36,8 +36,9 @@ export default function Navbar() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
-          setActiveSection(id);
-        }
+          if (scrollContainer.scrollTop > 10) {
+            setActiveSection(id);
+          }        }
       });
     }, observerOptions);
 

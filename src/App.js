@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Platforms from './components/Platforms';
 import Experience from './components/Experience';
+import Project from './components/Project';
+import Contact from './components/Contact';
 function App() {
   useEffect(() => {
     const spotlight = document.getElementById('spotlight');
@@ -64,8 +66,8 @@ function App() {
       <main className="right-scrollable">
         <About />
         <Experience />
-        <section id="Projects" className="section">Projects</section>
-        <section id="Contact" className="section">Contact Me</section>
+        <Project />
+        <Contact />
       </main>
     </div>
   );
