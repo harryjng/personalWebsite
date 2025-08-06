@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Platforms from './components/Platforms';
 import Experience from './components/Experience';
+import Navbar from './components/Navbar';
+
 function App() {
   useEffect(() => {
     const spotlight = document.getElementById('spotlight');
@@ -59,6 +61,7 @@ function App() {
       <div id="spotlight" className="spotlight-overlay"></div>
       <aside className="left-fixed">
         <Hero />
+        <Navbar />
         <Platforms />
       </aside>
       <main className="right-scrollable">
