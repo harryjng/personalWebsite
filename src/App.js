@@ -61,6 +61,7 @@ function App() {
       <div id="spotlight" className="spotlight-overlay"></div>
       <aside className="left-fixed">
         <Hero />
+        <Navbar />
         <Platforms />
       </aside>
       <main className="right-scrollable">
