@@ -6,6 +6,8 @@ import Platforms from './components/Platforms';
 import Experience from './components/Experience';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
+
 function App() {
   useEffect(() => {
     const spotlight = document.getElementById('spotlight');
