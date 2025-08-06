@@ -11,8 +11,10 @@ export default function Navbar() {
     const target = document.getElementById(id);
 
     if (scrollContainer && target) {
+      // Add offset for sections that need top spacing
+      const offset = id === 'Experience' ? 64 : 0; // 64px = 4rem
       scrollContainer.scrollTo({
-        top: target.offsetTop,
+        top: target.offsetTop - offset,
         behavior: 'smooth',
       });
     }
