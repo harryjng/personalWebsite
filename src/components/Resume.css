@@ -1,0 +1,154 @@
+.resume-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(30, 41, 59) 100%);
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.resume-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  color: rgb(148, 163, 184);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: rgb(45, 212, 191);
+}
+
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.download-link,
+.open-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: rgba(45, 212, 191, 0.1);
+  color: rgb(45, 212, 191);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
+
+.download-link:hover,
+.open-link:hover {
+  background: rgba(45, 212, 191, 0.2);
+  border-color: rgba(45, 212, 191, 0.5);
+  transform: translateY(-1px);
+}
+
+.resume-content {
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, rgb(45, 212, 191), rgb(167, 243, 208));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.resume-subtitle {
+  color: rgb(148, 163, 184);
+  font-size: 1.125rem;
+}
+
+.pdf-container {
+  width: 100%;
+  height: calc(100vh - 200px);
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.pdf-viewer {
+  border: none;
+  display: block;
+}
+
+.pdf-fallback {
+  padding: 2rem;
+  text-align: center;
+  color: rgb(51, 65, 85);
+}
+
+.fallback-link {
+  color: rgb(45, 212, 191);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.fallback-link:hover {
+  color: rgb(20, 184, 166);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .resume-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .resume-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .resume-content {
+    padding: 1rem;
+  }
+  
+  .resume-title {
+    font-size: 1.5rem;
+  }
+  
+  .pdf-container {
+    height: calc(100vh - 250px);
+  }
+}
+
+@media (max-width: 640px) {
+  .resume-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .download-link,
+  .open-link {
+    justify-content: center;
+    width: 100%;
+  }
+}

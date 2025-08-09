@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,8 +8,10 @@ import Experience from './components/Experience';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Resume from './components/Resume';
 
-function App() {
+// Home component for the main portfolio layout
+function Home() {
   useEffect(() => {
     const spotlight = document.getElementById('spotlight');
     const left = document.querySelector('.left-fixed');
@@ -73,6 +76,17 @@ function App() {
         <Contact />
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </Router>
   );
 }
 
