@@ -77,11 +77,7 @@ export default function Resume() {
 
       {/* Resume content */}
       <div className="resume-content">
-        <div className="resume-header">
-          <h1 className="resume-title">Harry Jung - Resume</h1>
-          <p className="resume-subtitle">Software Engineer</p>
-        </div>
-        
+
         <div className="pdf-container">
           <iframe
             src="/Harry_Jung_ResumeCopy.pdf"
