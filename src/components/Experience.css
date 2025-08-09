@@ -32,3 +32,19 @@
     font-size: 16px;
     font-weight: 500;    
 }
+
+
+.resume {
+  font-size: 1rem;  
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  color: #e2e8f0; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resume:hover {
+  /* color: #4DB6AC; */
+color: #5eead4;
+}

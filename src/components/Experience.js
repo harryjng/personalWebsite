@@ -1,3 +1,5 @@
+import './Experience.css'
+
 export default function Experience() {
   return (
     <>
@@ -87,7 +89,7 @@ export default function Experience() {
             className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="2024 to Present"
           >
-            May 2024 — Aug 2024
+            May — Aug 2024
           </header>
 
           {/* Content */}
@@ -163,7 +165,7 @@ export default function Experience() {
             className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="Apr 2024 to Aug 2024"
           >
-            Apr 2024 — Aug 2024
+            Apr — Aug 2024
           </header>
 
           {/* Content */}
@@ -204,6 +206,8 @@ export default function Experience() {
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
               {[
                 'Kotlin',
+                'OpenCV',
+                'Python',
                 'Android Studio',
                 'Java',
                 'User Testing',
@@ -233,7 +237,7 @@ export default function Experience() {
             className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="Apr 2024 to Aug 2024"
           >
-            Jul 2023 — Aug 2024
+            Apr 2023 — Aug 2024
           </header>
 
           {/* Content */}
@@ -287,6 +291,29 @@ export default function Experience() {
           </div>
         </a>
       </section>
+<div className="resume">
+  <a href="../assets/Harry_Jung_ResumeCopy.pdf" className="group/link resume">
+    <span>View Full&nbsp;</span>
+    <span className="inline-block">
+      Résumé
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+        aria-hidden="true"
+      >
+        <path
+          fillRule="evenodd"
+          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </span>
+  </a>
+</div>
+
+
     </>
   );
 }
