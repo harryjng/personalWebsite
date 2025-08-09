@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Experience.css'
 
 export default function Experience() {
@@ -293,7 +292,12 @@ export default function Experience() {
         </a>
       </section>
 <div className="resume">
-  <Link to="/resume" className="group/link resume">
+  <a 
+    href="/Harry_Jung_ResumeCopy.pdf" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="group/link resume"
+  >
     <span>View Full&nbsp;</span>
     <span className="inline-block">
       Résumé
@@ -311,7 +315,7 @@ export default function Experience() {
         />
       </svg>
     </span>
-  </Link>
+  </a>
 </div>
 
 
