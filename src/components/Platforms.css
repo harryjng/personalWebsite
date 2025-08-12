@@ -7,7 +7,7 @@
   display: flex;
   gap: 1.4rem;
   z-index: 100;
-  margin-left: 7.1rem;
+  margin-left: clamp(2rem, 8vw, 7.1rem);
   margin-bottom: 4rem;
 }
 

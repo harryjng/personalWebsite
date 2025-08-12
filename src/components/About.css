@@ -1,28 +1,21 @@
 .about-section {
-  margin-top: 4rem;
-      margin-right: 6.8rem;
+  margin: 4rem clamp(1rem, 4vw, 6.8rem) 8.5rem clamp(1rem, 4vw, 6.8rem);
   line-height: 1.5;
-  font-size: 1rem;  
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   font-family: sans-serif;
   color: rgb(148, 163, 184);
-margin-bottom: 1rem;
   -webkit-font-smoothing: antialiased;
-
 }
-
 
 .highlight-word {
   font-weight: 500;
   color: #e2e8f0; 
   text-decoration: none;
   transition: color 0.3s ease;
-
 }
 
 .highlight-word:hover {
-  /* color: #4DB6AC; */
-
-color: #5eead4;
+  color: #5eead4;
 }
 
 @media (max-width: 768px) {
