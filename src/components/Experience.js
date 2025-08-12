@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <>
       {/* First Experience - Software Engineer at Akima */}
-      <section id="Experience" className="pt-2 mt-16 mb-12 group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 mr-[6.8rem]">
+      <section id="Experience" className="experience-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         <a href="https://www.linkedin.com/company/cloud-lake-technology/" target="_blank"
           rel="noopener noreferrer"
           className="contents">
@@ -12,7 +12,7 @@ export default function Experience() {
 
           {/* Date */}
           <header
-            className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+            className="z-10 mb-2 mt-1 text-[0.7rem] font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="2024 to Present"
           >
             Jul 2025 — Present
@@ -67,7 +67,7 @@ export default function Experience() {
                 'Confluence',
               ].map((tech) => (
                 <li key={tech} className="mr-1.5 mt-2">
-                  <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                  <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-[0.8rem] font-medium leading-5 text-teal-300">
                     {tech}
                   </div>
                 </li>
@@ -77,7 +77,7 @@ export default function Experience() {
         </a>
       </section>
 
-      <section id="Experience-2" className="pt-2 mt-16 mb-12 group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 mr-[6.8rem]">
+      <section id="Experience-2" className="experience-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         {/* Hover background and inset shadow */}
         <a href="https://www.linkedin.com/posts/akima_internship-summerinterns-summerinternship2024-activity-7230231896318730243-4DYI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADD0bjgBVhO5Fe0R6OuKWLdsRoEnWAxo84c" target="_blank"
           rel="noopener noreferrer"
@@ -153,7 +153,7 @@ export default function Experience() {
       </section>
 
       {/* Second Experience - Undergraduate Researcher */}
-      <section id="Experience-3" className="pt-2 mb-12 group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 mr-[6.8rem]">
+      <section id="Experience-3" className="experience-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         {/* Hover background and inset shadow */}
         <a href="https://rtcl.eecs.umich.edu/rtclweb/assets/publications/2023/usenix23-tang.pdf" target="_blank"
           rel="noopener noreferrer"
@@ -225,7 +225,7 @@ export default function Experience() {
         </a>
       </section>
 
-      <section id="Experience-4" className="pt-2 mb-12 group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 mr-[6.8rem]">
+      <section id="Experience-4" className="experience-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         {/* Hover background and inset shadow */}
         <a href="https://www.linkedin.com/company/akp-sports-foundation/posts/?feedView=all" target="_blank"
           rel="noopener noreferrer"
@@ -291,34 +291,33 @@ export default function Experience() {
           </div>
         </a>
       </section>
-<div className="resume">
-  <a 
-    href="/Harry_Jung_ResumeCopy.pdf" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="group/link resume"
-  >
-    <span>View Full&nbsp;</span>
-    <span className="inline-block">
-      Résumé
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-        aria-hidden="true"
-      >
-        <path
-          fillRule="evenodd"
-          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </span>
-  </a>
-</div>
-
-
+      
+      <div className="resume">
+        <a 
+          href="/Harry_Jung_ResumeCopy.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="group/link resume"
+        >
+          <span>View Full&nbsp;</span>
+          <span className="inline-block">
+            Résumé
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+              aria-hidden="true"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
     </>
   );
 }

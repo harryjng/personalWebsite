@@ -3,8 +3,9 @@ body, html, #root {
   height: 100%;
   margin: 0;
   font-family: 'Inter', sans-serif;
-background-color: rgb(15 23 42);
+  background-color: rgb(15 23 42);
 }
+
 /* Global selection styling */
 ::selection {
   background-color: rgb(94 234 212); /* teal-300 */
@@ -17,17 +18,49 @@ background-color: rgb(15 23 42);
   overflow: hidden;
 }
 
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .split-layout {
+    flex-direction: column;
+  }
+  
+  .left-fixed {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .right-scrollable {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-scrollable {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .right-scrollable {
+    padding: 0.75rem;
+  }
+}
+
 .left-fixed {
   position: sticky;
   top: 0;
   height: 100vh;
   overflow: hidden; /* no scrollbars */
-  width: 47vw;
+  width: 43vw;
   min-width: 400px;
   max-width: 690px;
   /* Ensure the cursor shows it's interactive */
   cursor: grab;
-
 }
 
 .left-fixed:active {
@@ -40,6 +73,7 @@ background-color: rgb(15 23 42);
   height: 100vh;
   overflow-y: scroll;
   padding: 2rem;
+padding-right: 5rem;
   background-color: rgb(15 23 42);
   /* Smooth scrollbar styling */
   scroll-behavior: auto; /* Remove smooth scrolling for instant response */
@@ -102,4 +136,11 @@ background-color: rgb(15 23 42);
 
 .left-fixed:hover::before {
   opacity: 1;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 1024px) {
+  .left-fixed::before {
+    display: none;
+  }
 }

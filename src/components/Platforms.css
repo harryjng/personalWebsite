@@ -7,7 +7,7 @@
   display: flex;
   gap: 1.4rem;
   z-index: 100;
-  margin-left: 7.1rem;
+  margin-left: clamp(2rem, 8vw, 7.1rem);
   margin-bottom: 4rem;
 }
 
@@ -21,4 +21,42 @@
 
 .platform-icon:hover {
   color: #ffffff; /* white on hover */
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .platforms-container {
+    margin-left: clamp(1.5rem, 6vw, 4rem);
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .platforms-container {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 2rem auto;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .platform-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .platforms-container {
+    margin: 1.5rem auto;
+    gap: 1.5rem;
+  }
+  
+  .platform-icon {
+    width: 26px;
+    height: 26px;
+  }
 }
