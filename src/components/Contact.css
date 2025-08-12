@@ -4,3 +4,17 @@
   color: #f2f4f8;
   font-weight: bolder;
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 2rem 0;
+    height: auto;
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1.5rem 0;
+  }
+}

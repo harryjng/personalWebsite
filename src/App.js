@@ -14,17 +14,20 @@ function App() {
     const left = document.querySelector('.left-fixed');
     const right = document.querySelector('.right-scrollable');
 
-    // Mouse spotlight effect
+    // Check if device is mobile/tablet
+    const isMobile = window.innerWidth <= 768;
+
+    // Mouse spotlight effect (only on desktop)
     const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
-      if (spotlight) {
+      if (!isMobile && spotlight) {
+        const { clientX, clientY } = e;
         spotlight.style.background = `radial-gradient(600px at ${clientX}px ${clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
       }
     };
 
-    // High-performance scroll redirection for 1:1 speed matching
+    // High-performance scroll redirection for 1:1 speed matching (only on desktop)
     const redirectScroll = (e) => {
-      if (right) {
+      if (!isMobile && right) {
         e.preventDefault();
         e.stopPropagation();
 
@@ -38,22 +41,26 @@ function App() {
       }
     };
 
-    // Add event listeners
-    window.addEventListener('mousemove', handleMouseMove);
+    // Add event listeners only on desktop
+    if (!isMobile) {
+      window.addEventListener('mousemove', handleMouseMove);
 
-    if (left && right) {
-      // Use passive: false for immediate response without throttling
-      left.addEventListener('wheel', redirectScroll, {
-        passive: false,
-        capture: false
-      });
+      if (left && right) {
+        // Use passive: false for immediate response without throttling
+        left.addEventListener('wheel', redirectScroll, {
+          passive: false,
+          capture: false
+        });
+      }
     }
 
     // Cleanup
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      if (left) {
-        left.removeEventListener('wheel', redirectScroll);
+      if (!isMobile) {
+        window.removeEventListener('mousemove', handleMouseMove);
+        if (left) {
+          left.removeEventListener('wheel', redirectScroll);
+        }
       }
     };
   }, []);

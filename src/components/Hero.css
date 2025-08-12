@@ -45,10 +45,44 @@
   color: #134e4a; /* text-teal-900 */
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .hero-section {
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: auto;
+  }
+
+  .Name {
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
+    margin-top: -2rem;
+    margin-left: 0;
+  }
+
+  .hero-description {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    max-width: 100%;
+    font-size: 0.95rem;
   }
 }
 
+@media (max-width: 480px) {
+  .Name {
+    font-size: 2rem;
+  }
 
+  .hero-tagline {
+    font-size: 1rem;
+    margin-top: -1.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+}

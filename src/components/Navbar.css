@@ -86,8 +86,65 @@
 /* --- END COLOR CHANGES --- */
 /* ========================================================= */
 
-@media (max-width: 640px) {
-  .hero-section {
-    padding-bottom: 4rem;
+@media (max-width: 768px) {
+  .Navbar {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .nav-links {
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    margin-left: 0;
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+  }
+
+  .nav-links li::before {
+    width: 1.5rem;
+    align-self: center;
+  }
+
+  .nav-links li:hover::before {
+    width: 2.5rem;
+  }
+
+  .nav-links li.active::before {
+    width: 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.7rem;
+  }
+
+  .nav-links li::before {
+    width: 1.2rem;
+  }
+
+  .nav-links li:hover::before {
+    width: 2rem;
+  }
+
+  .nav-links li.active::before {
+    width: 2.2rem;
   }
 }

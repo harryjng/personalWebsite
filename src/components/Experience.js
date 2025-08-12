@@ -48,7 +48,7 @@ export default function Experience() {
             </h3>
 
             {/* Description */}
-            <p className="mt-2 text-sm leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
+            <p className="mt-2 text-[0.6rem] leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
               Deployed an AI-driven research platform for the Department of Defense Information Analysis Center, cutting workflow time by 97% (from 30 minutes to 1 minute). Integrated AI/ML automation for document processing and advanced search to accelerate decision-making. Delivered the project in an Agile Scrum environment, leading sprints, backlog prioritization, and stakeholder demos.           </p>
 
             {/* Skills */}

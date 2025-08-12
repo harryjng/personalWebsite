@@ -47,6 +47,46 @@ background-color: rgb(15 23 42);
   scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .left-fixed {
+    position: relative;
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    height: auto;
+    overflow: visible;
+    cursor: default;
+    padding: 1rem;
+  }
+
+  .left-fixed:active {
+    cursor: default;
+  }
+
+  .right-scrollable {
+    height: auto;
+    overflow-y: visible;
+    padding: 1rem;
+  }
+
+  /* Hide spotlight effect on mobile */
+  #spotlight {
+    display: none;
+  }
+
+  /* Hide scroll indicator on mobile */
+  .left-fixed::before {
+    display: none;
+  }
+}
+
 /* Webkit scrollbar styling */
 .right-scrollable::-webkit-scrollbar {
   width: 8px;
