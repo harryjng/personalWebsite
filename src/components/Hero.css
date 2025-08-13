@@ -57,8 +57,7 @@
   .hero-section {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    min-height: auto;
-  justify-content: left;
+  justify-content: flex-start;
   width: 80vw;
   }
 
