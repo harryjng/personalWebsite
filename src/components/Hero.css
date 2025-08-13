@@ -64,23 +64,22 @@
     justify-content: flex-start; 
     /* This stacks the items vertically */
     flex-direction: column; 
+    margin-left: -4rem;
+
   }
 
   .Name {
     white-space: nowrap;
     font-size: 2rem;
-    margin-left: 0;
     margin-top: 1rem;
   }
 
   .hero-tagline {
     font-size: 1.1rem;
     margin-top: 1rem;
-    margin-left: 0;
   }
 
   .hero-description {
-    margin-left: 0;
     margin-top: 0.5rem;
     max-width: 100%;
     font-size: 0.95rem;
