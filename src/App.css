@@ -111,9 +111,12 @@ padding-right: 5rem;
   }
 
   /* Hide spotlight effect on mobile */
-  #spotlight {
-    display: none;
-  }
+#spotlight {
+  position: fixed; /* Pins the element relative to the viewport */
+  top: 0;          /* Positions it at the very top of the screen */
+  left: 0;         /* Positions it at the very left of the screen */
+  display: block;  /* Ensures the element is visible */
+}
 
   /* Hide scroll indicator on mobile */
   .left-fixed::before {
