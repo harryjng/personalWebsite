@@ -64,7 +64,7 @@
     /* This stacks the items vertically */
     flex-direction: column; 
     margin-left: 1rem;
-    margin-top: 0rem;
+    margin-top: -2rem;
   }
 
   .Name {
@@ -73,7 +73,7 @@
   }
 
   .hero-tagline {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
 
