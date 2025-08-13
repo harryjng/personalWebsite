@@ -3,7 +3,7 @@ import './About.css';
 export default function Hero() {
     return (
         <section id="AboutMe" className="about-section">
-                  <h1>About</h1>
+                  <h1>ABOUT</h1>
             <div class="mb-4 font-medium text-slate-400 text-base leading-relaxed font-sans antialiased selection:bg-teal-300 selection:text-teal-900">
                 <p>
                     I’m a software engineer with a strong foundation in <a href="https://www.akima.com/opcos/cloud-lake-technology-data-analytics/" target="_blank" rel="noopener noreferrer" className='highlight-word'>full-stack development</a>, 

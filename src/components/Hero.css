@@ -76,11 +76,11 @@
 
   .hero-tagline {
     font-size: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .hero-description {
-    margin-top: 0rem;
+    margin-top: 0.5rem;
     max-width: 100%;
     font-size: 0.95rem;
   }
@@ -94,12 +94,14 @@
 
   .hero-tagline {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
       white-space: nowrap;
 
   }
 
   .hero-description {
     font-size: 1rem;
+    margin-top: 0.5rem;
+
   }
 }
