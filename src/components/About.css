@@ -7,6 +7,13 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.about-section h1 {
+  display: none;
+    color: #f2f4f8;
+  font-weight: bolder;
+  padding: 2rem 0;
+}
+
 .highlight-word {
   font-weight: 500;
   color: #e2e8f0; 
@@ -25,6 +32,10 @@
     margin-bottom: 2rem;
     font-size: 0.95rem;
   }
+  .about-section h1 {
+  display: inline;
+}
+
 }
 
 @media (max-width: 480px) {
