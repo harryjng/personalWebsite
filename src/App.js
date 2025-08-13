@@ -19,7 +19,7 @@ function App() {
 
     // Mouse spotlight effect (only on desktop)
     const handleMouseMove = (e) => {
-      if (!isMobile && spotlight) {
+      if (spotlight) {
         const { clientX, clientY } = e;
         spotlight.style.background = `radial-gradient(600px at ${clientX}px ${clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
       }
