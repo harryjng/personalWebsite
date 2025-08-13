@@ -77,6 +77,8 @@
   .hero-tagline {
     font-size: 0.5rem;
     margin-top: 0.6rem;
+      margin-bottom: 0rem;
+
   }
 
   .hero-description {
@@ -96,6 +98,8 @@
     font-size: 1.2rem;
     margin-top: 0.5rem;
       white-space: nowrap;
+        margin-bottom: 0rem;
+
 
   }
 
