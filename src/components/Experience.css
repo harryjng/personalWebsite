@@ -118,7 +118,7 @@
 .resume {
   margin-top: 2rem;
   margin-bottom: 4rem;
-  margin-left: clamp(1rem, 4vw, 6.8rem);
+  margin-left: 1rem;
 }
 }
 
