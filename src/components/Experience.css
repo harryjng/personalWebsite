@@ -4,20 +4,10 @@
   position: relative;
 }
 
-.section {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 6.6rem;
-  align-items: baseline; /* This aligns the text baselines of the children */
-  padding-top: 4rem;
-  margin-top: 4rem;
-}
 
 .info {
   margin-left: 3rem;
 }
-
-
 
 .date {
   --tw-text-opacity: 1;
@@ -127,6 +117,7 @@
 .resume {
   margin-top: 2rem;
   margin-bottom: 4rem;
+  margin-left: 3rem
 }
 }
 

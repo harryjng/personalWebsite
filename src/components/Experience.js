@@ -3,9 +3,10 @@ import './Experience.css'
 export default function Experience() {
   return (
     <>
+    <h1 className="experience-heading">EXPERIENCE</h1>        
+
       {/* First Experience - Software Engineer at Akima */}
       <section id="Experience" className="experience-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-<h1 className="experience-heading">EXPERIENCE</h1>        
 <a href="https://www.linkedin.com/company/cloud-lake-technology/" target="_blank"
           rel="noopener noreferrer"
           className="contents">
