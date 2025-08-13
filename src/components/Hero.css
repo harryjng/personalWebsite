@@ -55,7 +55,6 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 1rem;
     min-height: auto;
     width: 80vw;
     /* Add this line to make it a flex container */
@@ -65,22 +64,21 @@
     /* This stacks the items vertically */
     flex-direction: column; 
     margin-left: 1rem;
-
   }
 
   .Name {
     white-space: nowrap;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 1rem;
   }
 
   .hero-tagline {
-    font-size: 1.1rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
 
   .hero-description {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     max-width: 100%;
     font-size: 0.95rem;
   }
