@@ -42,7 +42,7 @@ function App() {
     };
 
     // Add event listeners only on desktop
-    if (!isMobile) {
+
       window.addEventListener('mousemove', handleMouseMove);
 
       if (left && right) {
@@ -52,7 +52,7 @@ function App() {
           capture: false
         });
       }
-    }
+    
 
     // Cleanup
     return () => {
