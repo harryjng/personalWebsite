@@ -1,5 +1,7 @@
 /* App.css */
-body, html, #root {
+body,
+html,
+#root {
   height: 100%;
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -8,8 +10,10 @@ body, html, #root {
 
 /* Global selection styling */
 ::selection {
-  background-color: rgb(94 234 212); /* teal-300 */
-  color: rgb(19 78 74); /* teal-900 */
+  background-color: rgb(94 234 212);
+  /* teal-300 */
+  color: rgb(19 78 74);
+  /* teal-900 */
 }
 
 .split-layout {
@@ -18,50 +22,12 @@ body, html, #root {
   overflow: hidden;
 }
 
-/* Responsive breakpoints */
-@media (max-width: 1024px) {
-  #spotlight {
-  position: fixed; /* Pins the element relative to the viewport */
-  top: 0;          /* Positions it at the very top of the screen */
-  left: 0;         /* Positions it at the very left of the screen */
-  display: block;  /* Ensures the element is visible */
-}
-  .split-layout {
-    flex-direction: column;
-  }
-  
-  .left-fixed {
-    position: relative;
-    width: 100%;
-    min-width: auto;
-    max-width: none;
-    height: auto;
-    min-height: 100vh;
-  }
-  
-  .right-scrollable {
-    height: auto;
-    min-height: 100vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .right-scrollable {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .right-scrollable {
-    padding: 0.75rem;
-  }
-}
-
 .left-fixed {
   position: sticky;
   top: 0;
   height: 100vh;
-  overflow: hidden; /* no scrollbars */
+  overflow: hidden;
+  /* no scrollbars */
   width: 43vw;
   min-width: 400px;
   max-width: 690px;
@@ -79,16 +45,48 @@ body, html, #root {
   height: 100vh;
   overflow-y: scroll;
   padding: 2rem;
-padding-right: 5rem;
+  padding-right: 5rem;
   background-color: rgb(15 23 42);
   /* Smooth scrollbar styling */
-  scroll-behavior: auto; /* Remove smooth scrolling for instant response */
+  scroll-behavior: auto;
+  /* Remove smooth scrolling for instant response */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
-/* Mobile responsive styles */
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .split-layout {
+    flex-direction: column;
+  }
+
+  .left-fixed {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .right-scrollable {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
 @media (max-width: 768px) {
+  #spotlight {
+    position: fixed;
+    /* Pins the element relative to the viewport */
+    top: 0;
+    /* Positions it at the very top of the screen */
+    left: 0;
+    /* Positions it at the very left of the screen */
+    display: block;
+    /* Ensures the element is visible */
+  }
+
   .split-layout {
     flex-direction: column;
     height: auto;
@@ -127,6 +125,12 @@ padding-right: 5rem;
   }
 }
 
+@media (max-width: 640px) {
+  .right-scrollable {
+    padding: 0.75rem;
+  }
+}
+
 /* Webkit scrollbar styling */
 .right-scrollable::-webkit-scrollbar {
   width: 8px;
@@ -162,7 +166,8 @@ padding-right: 5rem;
   height: 100vh;
   z-index: 30;
   pointer-events: none;
-  transition: background 0.05s ease-out; /* Smooth update */
+  transition: background 0.05s ease-out;
+  /* Smooth update */
 }
 
 /* Add some visual feedback for the interactive area */
@@ -178,8 +183,6 @@ padding-right: 5rem;
   border-radius: 2px;
   opacity: 0;
   transition: opacity 0.3s ease;
-}
+  /* opacity: 1; */
 
-.left-fixed:hover::before {
-  opacity: 1;
 }
