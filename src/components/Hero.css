@@ -68,12 +68,12 @@
 
   .Name {
     white-space: nowrap;
-    font-size: 3rem;
-    margin-top: 1rem;
+    font-size: 5rem;
+    margin-top: 0rem;
   }
 
   .hero-tagline {
-    font-size: 2rem;
+    font-size: 5rem;
     margin-top: 1rem;
   }
 
@@ -86,15 +86,15 @@
 
 @media (max-width: 480px) {
   .Name {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .hero-tagline {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
 
   .hero-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
