@@ -88,11 +88,6 @@
   font-weight: 500;    
 }
 
-
-.resume:hover {
-  color: #5eead4;
-}
-
 .experience-heading {
   display: none
 }
@@ -128,8 +123,11 @@
   display: block;
     color: #f2f4f8;
   font-weight: bolder;
-  margin-bottom: 0rem;
   margin-top: 4rem;
+}
+.resume {
+  margin-top: 2rem;
+  margin-bottom: rem;
 }
 }
 
