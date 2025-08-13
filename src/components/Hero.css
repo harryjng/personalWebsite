@@ -55,14 +55,16 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     min-height: auto;
-    text-align: left
+  justify-content: left;
+  width: 80vw;
   }
 
   .Name {
-    font-size: 2.5rem;
+    white-space: nowrap;
+    font-size: 2rem;
     margin-left: 0;
     margin-top: 1rem;
   }
