@@ -56,9 +56,14 @@
 @media (max-width: 768px) {
   .hero-section {
     padding-top: 1rem;
-    padding-bottom: 2rem;
-  justify-content: flex-start;
-  width: 80vw;
+    min-height: auto;
+    width: 80vw;
+    /* Add this line to make it a flex container */
+    display: flex; 
+    /* This aligns content to the start (left) */
+    justify-content: flex-start; 
+    /* This stacks the items vertically */
+    flex-direction: column; 
   }
 
   .Name {
