@@ -64,16 +64,16 @@
     /* This stacks the items vertically */
     flex-direction: column; 
     margin-left: 1rem;
+    margin-top: 0rem;
   }
 
   .Name {
     white-space: nowrap;
     font-size: 5rem;
-    margin-top: 0rem;
   }
 
   .hero-tagline {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-top: 1rem;
   }
 
