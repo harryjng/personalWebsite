@@ -122,6 +122,10 @@
   color: #5eead4;
 }
 
+.experience-heading {
+  display: none
+}
+
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
@@ -180,6 +184,3 @@
   
 }
 
-.experience-heading {
-  display: none
-}
