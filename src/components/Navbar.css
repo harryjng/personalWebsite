@@ -87,12 +87,16 @@
 /* ========================================================= */
 
 @media (max-width: 768px) {
+
   .Navbar {
+    display: none; /* This line hides the entire component */
+  }
+  /* .Navbar {
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
     margin-top: 0;
-  }
+  } */
 
   .nav-links {
     margin-top: 2rem;
@@ -128,6 +132,9 @@
 }
 
 @media (max-width: 480px) {
+  .Navbar {
+    display: none; /* This line hides the entire component */
+  }
   .nav-links {
     gap: 1rem;
   }
