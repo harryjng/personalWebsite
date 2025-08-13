@@ -20,6 +20,12 @@ body, html, #root {
 
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
+  #spotlight {
+  position: fixed; /* Pins the element relative to the viewport */
+  top: 0;          /* Positions it at the very top of the screen */
+  left: 0;         /* Positions it at the very left of the screen */
+  display: block;  /* Ensures the element is visible */
+}
   .split-layout {
     flex-direction: column;
   }
@@ -111,12 +117,9 @@ padding-right: 5rem;
   }
 
   /* Hide spotlight effect on mobile */
-#spotlight {
-  position: fixed; /* Pins the element relative to the viewport */
-  top: 0;          /* Positions it at the very top of the screen */
-  left: 0;         /* Positions it at the very left of the screen */
-  display: block;  /* Ensures the element is visible */
-}
+  /* #spotlight {
+    display: none;
+  } */
 
   /* Hide scroll indicator on mobile */
   .left-fixed::before {
