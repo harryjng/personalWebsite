@@ -62,22 +62,6 @@
   font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
-.experience-section {
-  padding: 2rem 0;
-  margin: 2rem clamp(1rem, 4vw, 6.8rem) 3rem clamp(1rem, 4vw, 6.8rem);
-  position: relative;
-
-}
-
-.section {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 6.6rem;
-  align-items: baseline; /* This aligns the text baselines of the children */
-  padding-top: 4rem;
-  margin-top: 4rem;
-}
-
 .info {
   margin-left: 3rem;
 }
@@ -104,19 +88,6 @@
   font-weight: 500;    
 }
 
-.resume {
-  font-size: 1rem;  
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  color: #e2e8f0; 
-  text-decoration: none;
-  transition: color 0.3s ease;
-  margin-top: 2rem;
-  margin-right: clamp(1rem, 4vw, 6.8rem);
-  margin-bottom: 2rem;
-  margin-left: 0;
-}
 
 .resume:hover {
   color: #5eead4;
@@ -127,12 +98,8 @@
 }
 
 @media (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    margin-right: 0;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    align-items: flex-start;
+
+  .experience-section {
     margin-bottom: 0rem;
   }
 
@@ -166,10 +133,6 @@
 }
 
 @media (max-width: 480px) {
-  .section {
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-  }
 
   .role {
     font-size: 14px;
