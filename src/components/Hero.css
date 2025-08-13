@@ -67,13 +67,13 @@
     margin-top: -2rem;
   }
 
-  .Name {
+  .hero-name {
     white-space: nowrap;
     font-size: 5rem;
   }
 
   .hero-tagline {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
 
