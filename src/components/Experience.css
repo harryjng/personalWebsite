@@ -95,7 +95,6 @@
 @media (max-width: 768px) {
 
   .experience-section {
-    margin-bottom: 0rem;
     margin-top: 2rem;
   }
 
@@ -127,7 +126,7 @@
 }
 .resume {
   margin-top: 2rem;
-  margin-bottom: rem;
+  margin-bottom: 4rem;
 }
 }
 
