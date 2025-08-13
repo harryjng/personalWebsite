@@ -19,7 +19,7 @@ const isMobile = window.innerWidth <= 768;
 if (isMobile && spotlight) {
   // Position spotlight so 75% is visible (25% hidden in top-left)
   // Assuming spotlight radius is 300px, position it at -75px, -75px
-  spotlight.style.background = `radial-gradient(600px at 30px 50px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+  spotlight.style.background = `radial-gradient(700px at 30px 70px, rgba(29, 78, 216, 0.15), transparent 80%)`;
 }
 
 // Mouse spotlight effect (only on desktop)
