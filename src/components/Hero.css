@@ -68,8 +68,10 @@
   }
 
   .hero-name {
+    margin-top: -2rem;
+
     white-space: nowrap;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .hero-tagline {
