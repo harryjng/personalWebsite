@@ -113,12 +113,12 @@
     color: #f2f4f8;
   font-weight: bolder;
   margin-top: 4rem;
+  margin-left: clamp(1rem, 4vw, 6.8rem);
 }
 .resume {
   margin-top: 2rem;
   margin-bottom: 4rem;
-  margin-left: 3rem
-}
+  margin-left: clamp(1rem, 4vw, 6.8rem)}
 }
 
 @media (max-width: 480px) {
