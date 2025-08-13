@@ -151,6 +151,10 @@
     font-size: 13px;
     line-height: 1.3;
   }
+
+    .experience-heading {
+  display: block;
+}
 }
 
 @media (max-width: 480px) {
@@ -171,4 +175,12 @@
     font-size: 0.7rem;
   }
 }
+}
+
+.experience-heading {
+  display: none;
+  color: #f2f4f8;
+  font-weight: bolder;
+  margin-bottom: 1.7rem;
+  margin-top: 4rem;
 }
