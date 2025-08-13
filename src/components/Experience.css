@@ -154,6 +154,10 @@
 
   .experience-heading {
   display: block;
+    color: #f2f4f8;
+  font-weight: bolder;
+  margin-bottom: 1.7rem;
+  margin-top: 4rem;
 }
 }
 
@@ -173,16 +177,7 @@
 
   .date {
     font-size: 0.7rem;
-  }
-    .experience-heading {
-  display: block;
+  } 
+  
 }
-}
-
-.experience-heading {
-  display: none;
-  color: #f2f4f8;
-  font-weight: bolder;
-  margin-bottom: 1.7rem;
-  margin-top: 4rem;
 }
