@@ -6,7 +6,7 @@ export default function Navbar() {
   const sectionIds = ['AboutMe', 'Experience', 'Projects', 'Contact'];
   const activeSection = useScrollSpy(sectionIds, {
     // Changed: More generous margins - section becomes active when it takes up 30% of screen
-    rootMargin: '-40% 0px -30% 0px',  // Top 30%, Bottom 40% = Active zone is middle 30%
+    rootMargin: '-20% 0px -60% 0px',  // Top 30%, Bottom 40% = Active zone is middle 30%
     minIntersectionRatio: 0.1
   });
 
