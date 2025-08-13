@@ -9,10 +9,9 @@
 
 .about-section h1 {
   display: none;
-    color: #f2f4f8;
+  color: #f2f4f8;
   font-weight: bolder;
-  padding: 2rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .highlight-word {
