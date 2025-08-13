@@ -5,7 +5,8 @@ import { useEffect } from 'react';
 export default function Navbar() {
   const sectionIds = ['AboutMe', 'Experience', 'Projects', 'Contact'];
   const activeSection = useScrollSpy(sectionIds, {
-    rootMargin: '-20% 0px -60% 0px',
+    // Changed: More generous margins - section becomes active when it takes up 30% of screen
+    rootMargin: '-40% 0px -30% 0px',  // Top 30%, Bottom 40% = Active zone is middle 30%
     minIntersectionRatio: 0.1
   });
 
@@ -20,7 +21,7 @@ export default function Navbar() {
     
     const scrollContainer = document.querySelector('.right-scrollable');
     const target = document.getElementById(id);
-
+    
     if (scrollContainer && target) {
       // Add offset for sections that need top spacing
       const offset = id === 'Experience' ? 64 : 0; // 64px = 4rem
