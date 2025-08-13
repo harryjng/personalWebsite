@@ -62,7 +62,6 @@
   font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
-.experience-section header {
 .experience-section {
   padding: 2rem 0;
   margin: 2rem clamp(1rem, 4vw, 6.8rem) 3rem clamp(1rem, 4vw, 6.8rem);
@@ -179,7 +178,6 @@
     font-size: 0.7rem;
   } 
   
-}
 }
 
 .experience-heading {
