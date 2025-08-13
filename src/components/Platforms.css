@@ -32,12 +32,14 @@
     margin-bottom: 4rem;
     margin-top: 0.3rem;
     justify-content: left;
+  gap: 1.5rem;
+
   }
 }
 
 @media (max-width: 480px) {
   .platforms-container {
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 0.3rem;
   }
 
