@@ -1,9 +1,11 @@
 .project-container {
-  padding: 4rem 0;
-  height: 100vh;
-  color: #f2f4f8;
-  font-weight: bolder;
+  margin-left: 4rem;
+margin-top: 9rem;
+}
 
+.project-images {
+  width: 140px;
+  height: 79px;
 }
 
 @media (max-width: 768px) {
