@@ -1,11 +1,18 @@
 .project-container {
-  margin-left: 4rem;
-margin-top: 9rem;
+  margin: 2rem clamp(1rem, 4vw, 6.8rem) 3rem clamp(1rem, 4vw, 6.8rem);
+  margin-top: 9rem;
 }
 
 .project-images {
-  width: 140px;
-  height: 79px;
+  width: 140px !important;
+  height: 79px !important;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  max-width: 140px;
+  max-height: 79px;
+  min-width: 140px;
+  min-height: 79px;
 }
 
 @media (max-width: 768px) {
@@ -14,7 +21,6 @@ margin-top: 9rem;
     height: auto;
     min-height: 50vh;
     margin-left: clamp(1rem, 4vw, 6.8rem);
-
   }
 }
 
