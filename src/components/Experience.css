@@ -35,7 +35,7 @@
   margin-top: 2rem;
   margin-right: clamp(1rem, 4vw, 6.8rem);
   margin-bottom: 2rem;
-  margin-left: 0;
+  margin-left: 1.9rem;
 }
 
 .resume:hover {

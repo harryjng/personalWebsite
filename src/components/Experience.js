@@ -51,8 +51,7 @@ export default function Experience() {
 
             {/* Description */}
             <p className="mt-2 text-[0.6rem] leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
-              Deployed an AI-driven research platform for the Department of Defense Information Analysis Center, cutting workflow time by 97% (from 30 minutes to 1 minute). Integrated AI/ML automation for document processing and advanced search to accelerate decision-making. Delivered the project in an Agile Scrum environment, leading sprints, backlog prioritization, and stakeholder demos.           </p>
-
+Deployed an AI-driven research platform for the DoD Information Analysis Center, reducing workflow time 97% (30 min → 1 min) by integrating AI/ML for document processing and advanced search. Led Agile sprints, backlog prioritization, and stakeholder demos.</p>
             {/* Skills */}
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
               {[
@@ -125,8 +124,7 @@ export default function Experience() {
 
             {/* Description */}
             <p className="mt-2 text-sm leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
-              Built an XR tool for 3D construction visualization using Meta Quest 3. Reduced design review time by 25% and increased collaboration efficiency by 30% through virtual walkthroughs. Developed a military Emergency 911 system, improving response time by 30% through geospatial mapping and real-time data integration.
-            </p>
+Built a Meta Quest 3 XR tool for 3D construction visualization, cutting design review time 25% and boosting collaboration 30%. Developed a military Emergency 911 system, improving response time 30% via geospatial mapping and real-time data.            </p>
 
             {/* Skills */}
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
@@ -179,7 +177,7 @@ export default function Experience() {
                   <span className="text-base leading-relaxed font-sans antialiased no-underline transition-colors duration-300 ease-in-out">
                     Undergraduate Software Researcher ·{' '}
                     <span className="inline-block">
-                      University of Michigan Real-Time Computing Lab
+                      UMICH RTCL
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -201,8 +199,7 @@ export default function Experience() {
 
             {/* Description */}
             <p className="mt-2 text-sm leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
-              Developed a Kotlin algorithm in Android Studio to prevent shoulder surfing with low user disruption. Optimized screen blurring for close distance reading while reducing wide angle recognition rates by 30%. Conducted user testing to optimize visibility and security, leading to a 20% reduction in CPU and memory usage through system improvements.
-            </p>
+Developed a Kotlin Android algorithm to prevent shoulder surfing, optimizing screen blurring and reducing wide-angle recognition 30% while cutting CPU/memory use 20% through user-tested improvements.            </p>
 
             {/* Skills */}
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
@@ -273,9 +270,7 @@ export default function Experience() {
 
             {/* Description */}
             <p className="mt-2 text-sm leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
-              Managed sporting operations for the Asian American community across America, using data-driven strategies and technology to improve event coordination and participant engagement.
-              Streamlined document processing, reducing manual workload by 25% weekly.
-              Enhanced data accuracy by 15% by developing a data entry system with validation and error tracking.
+Managed Asian American sporting operations nationwide, using tech and data-driven strategies to streamline events, cut manual workload 25%, and improve data accuracy 15% with a validated entry system.
             </p>
             {/* Skills */}
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
