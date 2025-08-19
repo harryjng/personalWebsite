@@ -24,7 +24,7 @@ export default function Navbar() {
     
     if (scrollContainer && target) {
       // Add offset for sections that need top spacing
-      const offset = id === 'Experience' ? 64 : 0; // 64px = 4rem
+      const offset = (id === 'Experience' || id === 'Projects') ? 64 : 0; // 64px = 4rem
       
       // Special handling for About section - scroll to very top
       if (id === 'AboutMe') {
