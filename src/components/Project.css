@@ -3,6 +3,15 @@
   margin-top: 9rem;
 }
 
+/* Add spacing between individual project sections */
+.project-section {
+  margin-bottom: 3rem;
+}
+
+.project-section:last-child {
+  margin-bottom: 0;
+}
+
 .project-images {
   width: 140px !important;
   height: 79px !important;

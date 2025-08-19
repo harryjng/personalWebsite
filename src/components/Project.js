@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <>
       <div className='project-container'>
-        <section className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+        <section className="project-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
           <a href="https://www.youtube.com/watch?v=SOMgoDBU5QQ" target="_blank"
             rel="noopener noreferrer"
             className="contents">
@@ -67,7 +67,7 @@ export default function Project() {
             </div>
           </a>
         </section>
-                <section className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                <section className="project-section group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
           <a href="https://www.youtube.com/watch?v=SOMgoDBU5QQ" target="_blank"
             rel="noopener noreferrer"
             className="contents">
