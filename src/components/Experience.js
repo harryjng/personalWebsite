@@ -51,7 +51,7 @@ export default function Experience() {
 
             {/* Description */}
             <p className="mt-2 text-[0.6rem] leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium">
-Deployed an AI-driven research platform for the DoD Information Analysis Center, reducing workflow time 97% (30 min → 1 min) by integrating AI/ML for document processing and advanced search. Led Agile sprints, backlog prioritization, and stakeholder demos.</p>
+(Secret Clearance) Deployed an AI-driven research platform for the DoD Information Analysis Center, reducing workflow time 97% (30 min → 1 min) by integrating AI/ML for document processing and advanced search. Led Agile sprints, backlog prioritization, and stakeholder demos.</p>
             {/* Skills */}
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
               {[
