@@ -146,13 +146,7 @@
 /* Tablets in portrait mode */
 @media (min-width: 769px) and (max-width: 1024px) {
   .Navbar {
-    display: flex;
-    position: relative;
-    margin-left: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: 0;
-    justify-content: center;
+    display: none; /* Hide navbar in tablet portrait mode to prevent double navigation */
   }
 
   .nav-links {

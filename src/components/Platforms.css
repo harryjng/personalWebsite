@@ -23,6 +23,13 @@
   color: #ffffff; /* white on hover */
 }
 
+/* Hide platforms in tablet portrait mode to prevent content overlap */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .platforms-container {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .platforms-container {
     position: relative;

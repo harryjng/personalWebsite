@@ -120,6 +120,9 @@
 @media (min-width: 1025px) and (max-width: 1279px) {
   .experience-section {
     margin: 2.5rem clamp(1.5rem, 4vw, 7rem) 3.5rem clamp(1.5rem, 4vw, 7rem);
+    /* Adjust grid to prevent date column from being too wide */
+    grid-template-columns: minmax(120px, 1fr) 4fr !important;
+    gap: 1.5rem !important;
   }
 
   .info {
@@ -137,6 +140,15 @@
 
   .resume {
     margin-left: 2rem;
+  }
+
+  /* Ensure proper column spans for this breakpoint */
+  .experience-section header {
+    grid-column: 1;
+  }
+
+  .experience-section > a > div:last-child {
+    grid-column: 2;
   }
 }
 
