@@ -1,5 +1,5 @@
 .about-section {
-  margin: 4rem clamp(1rem, 4vw, 6.8rem) 8.5rem clamp(1rem, 4vw, 6.8rem);
+  margin: 4rem 0 8.5rem 0;
   line-height: 1.5;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   font-family: sans-serif;
@@ -28,7 +28,7 @@
 /* Large monitors and 4K displays */
 @media (min-width: 1600px) {
   .about-section {
-    margin: 5rem clamp(2rem, 5vw, 8rem) 10rem clamp(2rem, 5vw, 8rem);
+    margin: 5rem 0 10rem 0;
     font-size: clamp(1rem, 2.5vw, 1.125rem);
     line-height: 1.6;
   }
@@ -42,7 +42,7 @@
 /* Tablets in landscape mode */
 @media (min-width: 1025px) and (max-width: 1279px) {
   .about-section {
-    margin: 4.5rem clamp(1.5rem, 4vw, 7rem) 9rem clamp(1.5rem, 4vw, 7rem);
+    margin: 4.5rem 0 9rem 0;
     font-size: clamp(0.9rem, 2.5vw, 1.05rem);
   }
 }
@@ -50,7 +50,7 @@
 /* Tablets in portrait mode */
 @media (min-width: 769px) and (max-width: 1024px) {
   .about-section {
-    margin: 0rem clamp(2rem, 4vw, 4rem) 6rem clamp(2rem, 4vw, 4rem);
+    margin: 0rem 0 6rem 0;
     font-size: clamp(0.9rem, 2.5vw, 1rem);
     line-height: 1.5;
   }
@@ -72,6 +72,7 @@
   .about-section {
     margin-top: 2rem;
     margin-right: 0;
+    margin-left: 0;
     font-size: 0.95rem;
     margin-bottom: 0rem;
   }
@@ -84,6 +85,7 @@
 @media (max-width: 480px) {
   .about-section {
     margin-top: 1.5rem;
+    margin-left: 0;
     font-size: 0.9rem;
   }
 }

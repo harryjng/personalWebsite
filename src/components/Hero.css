@@ -90,7 +90,7 @@
   }
 
   .hero-name {
-    font-size: clamp(2.8rem, 8vw, 4rem);
+    font-size: clamp(2rem, 8vw, 3rem);
   }
 
   .hero-tagline {
@@ -106,15 +106,15 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero-section {
     min-height: 40vh;
-    padding: 1.5rem 2rem 1rem 0rem;
-    margin-left: clamp(2rem, 4vw, 4rem);
+    padding: 1.5rem 2rem 1rem 0;
+    margin-left: 0;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
   }
 
   .hero-name {
-    font-size: clamp(2.5rem, 6vw, 3.2rem);
+    font-size: clamp(2.9rem, 6vw, 3.2rem);
     margin-top: 1rem;
   }
 

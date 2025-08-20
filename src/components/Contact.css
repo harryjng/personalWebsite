@@ -1,6 +1,5 @@
 .contact-container {
-  margin: 0rem clamp(1rem, 4vw, 6.8rem) 0rem clamp(1rem, 4vw, 6.8rem);
-  margin-top: 4rem;
+  margin: 4rem 0 0rem 0;
   padding: 4rem 0;
   height: 100vh;
   color: #f2f4f8;
@@ -134,8 +133,7 @@
 /* Large monitors and 4K displays */
 @media (min-width: 1440px) {
   .contact-container {
-    margin: 0rem clamp(2rem, 5vw, 8rem) 0rem clamp(2rem, 5vw, 8rem);
-    margin-top: 5rem;
+    margin: 5rem 0 0rem 0;
     padding: 5rem 0;
   }
 
@@ -180,8 +178,7 @@
 /* Tablets in landscape mode */
 @media (min-width: 1025px) and (max-width: 1439px) {
   .contact-container {
-    margin: 0rem clamp(1.5rem, 4vw, 7rem) 0rem clamp(1.5rem, 4vw, 7rem);
-    margin-top: 4.5rem;
+    margin: 4.5rem 0 0rem 0;
     padding: 4.5rem 0;
   }
 
@@ -220,8 +217,7 @@
 /* Tablets in portrait mode */
 @media (min-width: 769px) and (max-width: 1024px) {
   .contact-container {
-    margin: 0rem clamp(2rem, 4vw, 4rem) 0rem clamp(2rem, 4vw, 4rem);
-    margin-top: 3rem;
+    margin: 3rem 0 0rem 0;
     padding: 3rem 0;
     height: auto;
     min-height: 60vh;
@@ -264,7 +260,7 @@
     padding: 2rem 0;
     height: auto;
     min-height: 50vh;
-    margin-left: clamp(1rem, 4vw, 6.8rem);
+    margin-left: 0;
     margin-top: 2rem;
   }
 
