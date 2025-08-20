@@ -25,6 +25,49 @@
   color: #5eead4;
 }
 
+/* Large monitors and 4K displays */
+@media (min-width: 1600px) {
+  .about-section {
+    margin: 5rem clamp(2rem, 5vw, 8rem) 10rem clamp(2rem, 5vw, 8rem);
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    line-height: 1.6;
+  }
+}
+
+/* Desktop/laptop (MacBook Air 13" range) - preserve original styling */
+@media (min-width: 1280px) and (max-width: 1599px) {
+  /* Keep original desktop styling - no changes needed */
+}
+
+/* Tablets in landscape mode */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .about-section {
+    margin: 4.5rem clamp(1.5rem, 4vw, 7rem) 9rem clamp(1.5rem, 4vw, 7rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+  }
+}
+
+/* Tablets in portrait mode */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-section {
+    margin: 3rem clamp(2rem, 4vw, 4rem) 6rem clamp(2rem, 4vw, 4rem);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.5;
+  }
+
+  .about-section h1 {
+    display: block;
+    color: #f2f4f8;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .highlight-word {
+    font-weight: 500;
+  }
+}
+
 @media (max-width: 768px) {
   .about-section {
     margin-top: 2rem;

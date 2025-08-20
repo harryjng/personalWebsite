@@ -53,6 +53,83 @@
   color: #134e4a; /* text-teal-900 */
 }
 
+/* Large monitors and 4K displays */
+@media (min-width: 1600px) {
+  .hero-section {
+    padding: 5rem 3rem 3rem 0rem;
+    margin-left: clamp(10rem, 10vw, 12rem);
+  }
+
+  .hero-name {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+    margin-top: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-top: 0.8rem;
+  }
+
+  .hero-description {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    max-width: clamp(18rem, 80vw, 24rem);
+    margin-top: 0.25rem;
+  }
+}
+
+/* Desktop/laptop (MacBook Air 13" range) - preserve original styling */
+@media (min-width: 1280px) and (max-width: 1599px) {
+  /* Keep original desktop styling - no changes needed */
+}
+
+/* Tablets in landscape mode */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .hero-section {
+    padding: 4rem 2rem 2rem 0rem;
+    margin-left: clamp(8rem, 8vw, 10rem);
+  }
+
+  .hero-name {
+    font-size: clamp(2.8rem, 8vw, 4rem);
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+  }
+
+  .hero-description {
+    max-width: clamp(16rem, 80vw, 22rem);
+  }
+}
+
+/* Tablets in portrait mode */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    min-height: auto;
+    padding: 3rem 2rem 2rem 2rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 6vw, 3.2rem);
+    margin-top: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-top: 0.7rem;
+  }
+
+  .hero-description {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    max-width: 90%;
+    margin-top: 0.6rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     min-height: auto;

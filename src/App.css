@@ -49,100 +49,169 @@ scrollbar-width: thin;
 scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 /* Responsive breakpoints */
+/* Large monitors and 4K displays */
+@media (min-width: 1600px) {
+  .left-fixed {
+    width: 40vw;
+    min-width: 500px;
+    max-width: 800px;
+  }
+  
+  .right-scrollable {
+    padding: 3rem;
+    padding-right: 6rem;
+  }
+  
+  .section {
+    padding: 5rem 0;
+  }
+}
+
+/* Desktop/laptop (MacBook Air 13" range) - preserve original styling */
+@media (min-width: 1280px) and (max-width: 1599px) {
+  /* Keep original desktop styling - no changes needed */
+}
+
+/* Tablets in landscape mode */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .left-fixed {
+    width: 42vw;
+    min-width: 450px;
+    max-width: 720px;
+  }
+  
+  .right-scrollable {
+    padding: 2.5rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Tablets in portrait mode */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .split-layout {
+    flex-direction: column;
+  }
+  
+  .left-fixed {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    height: auto;
+    padding: 2rem;
+  }
+  
+  .right-scrollable {
+    height: auto;
+    padding: 2rem;
+    padding-right: 3rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+}
+
 @media (max-width: 1024px) {
-.split-layout {
-flex-direction: column;
- }
-.left-fixed {
-position: relative;
-width: 100%;
-min-width: auto;
-max-width: none;
-height: auto;
- }
-.right-scrollable {
-height: auto; }
+  .split-layout {
+    flex-direction: column;
+  }
+  .left-fixed {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    height: auto;
+  }
+  .right-scrollable {
+    height: auto; }
 }
+
 @media (max-width: 768px) {
-.split-layout {
-flex-direction: column;
-height: auto;
-overflow: visible;
-margin-top: 2rem;
- }
-.left-fixed {
-position: relative;
-width: 100%;
-min-width: unset;
-max-width: unset;
-height: auto;
-overflow: visible;
-cursor: default;
-padding: 1rem;
- }
-.left-fixed:active {
-cursor: default;
- }
-.right-scrollable {
-height: auto;
-overflow-y: visible;
-padding: 1rem;
- }
-/* Hide scroll indicator on mobile */
-.left-fixed::before {
-display: none;
- }
+  .split-layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+    margin-top: 2rem;
+  }
+  .left-fixed {
+    position: relative;
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    height: auto;
+    overflow: visible;
+    cursor: default;
+    padding: 1rem;
+  }
+  .left-fixed:active {
+    cursor: default;
+  }
+  .right-scrollable {
+    height: auto;
+    overflow-y: visible;
+    padding: 1rem;
+  }
+  /* Hide scroll indicator on mobile */
+  .left-fixed::before {
+    display: none;
+  }
 }
+
 @media (max-width: 640px) {
-.right-scrollable {
-padding: 0.75rem;
- }
+  .right-scrollable {
+    padding: 0.75rem;
+  }
 }
+
 /* Webkit scrollbar styling */
 .right-scrollable::-webkit-scrollbar {
-width: 8px;
+  width: 8px;
 }
 .right-scrollable::-webkit-scrollbar-track {
-background: transparent;
+  background: transparent;
 }
 .right-scrollable::-webkit-scrollbar-thumb {
-background-color: rgba(255, 255, 255, 0.3);
-border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
 .right-scrollable::-webkit-scrollbar-thumb:hover {
-background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
 /* Optional: section spacing */
 .section {
-padding: 4rem 0;
-height: 100vh;
-color: #f2f4f8;
-font-family: 'Times New Roman', Times, serif;
+  padding: 4rem 0;
+  height: 100vh;
+  color: #f2f4f8;
+  font-family: 'Times New Roman', Times, serif;
 }
+
 /* Overlay spotlight that follows the cursor */
 #spotlight {
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-z-index: 30;
-pointer-events: none;
-transition: background 0.05s ease-out;
-/* Smooth update */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  pointer-events: none;
+  transition: background 0.05s ease-out;
+  /* Smooth update */
 }
+
 /* Add some visual feedback for the interactive area */
 .left-fixed::before {
-content: '';
-position: absolute;
-top: 50%;
-right: 20px;
-transform: translateY(-50%);
-width: 4px;
-height: 40px;
-background: rgba(255, 255, 255, 0.2);
-border-radius: 2px;
-opacity: 0;
-transition: opacity 0.3s ease;
-/* opacity: 1; */
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* opacity: 1; */
 }
