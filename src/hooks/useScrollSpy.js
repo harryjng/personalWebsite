@@ -26,23 +26,31 @@ export function useScrollSpy(sectionIds, options = {}) {
 
     const handleScroll = () => {
       const containerRect = scrollContainer.getBoundingClientRect();
-      const viewportCenter = containerRect.top + containerRect.height / 2;
+      const viewportTop = containerRect.top;
+      const viewportCenter = viewportTop + containerRect.height / 2;
       
-      let closestSection = sections[0].id;
-      let closestDistance = Infinity;
-
-      sections.forEach(({ id, element }) => {
+      let activeSection = sections[0].id;
+      
+      // Find the section that is currently most visible in the viewport
+      // Priority: section that contains the viewport center, or the last section that has passed the top
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const { id, element } = sections[i];
         const rect = element.getBoundingClientRect();
-        const sectionCenter = rect.top + rect.height / 2;
-        const distance = Math.abs(sectionCenter - viewportCenter);
-
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closestSection = id;
+        
+        // If the section top is above or at the viewport center, this section is active
+        // This ensures proper detection when scrolling up from bottom
+        if (rect.top <= viewportCenter) {
+          activeSection = id;
+          break;
         }
-      });
+      }
+      
+      // Special case: if we're very close to the top (within 100px), always show About
+      if (scrollContainer.scrollTop < 100) {
+        activeSection = 'AboutMe';
+      }
 
-      setActiveSection(closestSection);
+      setActiveSection(activeSection);
     };
 
     // Initial check
