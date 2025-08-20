@@ -1,6 +1,6 @@
 .contact-container {
-  margin: 2rem clamp(1rem, 4vw, 6.8rem) 3rem clamp(1rem, 4vw, 6.8rem);
-  margin-top: 9rem;
+  margin: 0rem clamp(1rem, 4vw, 6.8rem) 0rem clamp(1rem, 4vw, 6.8rem);
+  margin-top: 4rem;
   padding: 4rem 0;
   height: 100vh;
   color: #f2f4f8;
