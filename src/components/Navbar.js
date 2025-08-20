@@ -1,23 +1,12 @@
 import './Navbar.css';
 import { useScrollSpy } from '../hooks/useScrollSpy';
-import { useEffect } from 'react';
 
 export default function Navbar() {
   const sectionIds = ['AboutMe', 'Experience', 'Projects', 'Contact'];
-  const activeSection = useScrollSpy(sectionIds, {
-    // Changed: More generous margins - section becomes active when it takes up 30% of screen
-    rootMargin: '-20% 0px -60% 0px',  // Top 30%, Bottom 40% = Active zone is middle 30%
-    minIntersectionRatio: 0.1
-  });
-
-  // Debug logging
-  useEffect(() => {
-    console.log('Active section changed to:', activeSection);
-  }, [activeSection]);
+  const activeSection = useScrollSpy(sectionIds);
 
   const handleNavClick = (e, id) => {
     e.preventDefault();
-    console.log('Navbar clicked:', id);
     
     const scrollContainer = document.querySelector('.right-scrollable');
     const target = document.getElementById(id);
