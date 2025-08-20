@@ -23,15 +23,15 @@
   color: #ffffff; /* white on hover */
 }
 
-/* Make platforms stick to top in tablet portrait mode */
+/* Make platforms stick to top in tablet portrait mode with hero's left margin */
 @media (min-width: 769px) and (max-width: 1024px) {
   .platforms-container {
     position: relative;
     bottom: auto;
     left: auto;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 0.5rem;
+    margin-left: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 0rem;
+    margin-top: -7rem;
     justify-content: left;
   }
 }
@@ -43,10 +43,9 @@
     left: auto;
     margin-left: 1rem;
     margin-bottom: 4rem;
-    margin-top: 0.3rem;
+    margin-top: -1rem;
     justify-content: left;
-  gap: 1.5rem;
-
+    gap: 1.5rem;
   }
 }
 
