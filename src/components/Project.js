@@ -110,7 +110,7 @@ export default function Project() {
               </h3>
 
               <p className="mt-2 text-sm leading-normal text-slate-400 text-base leading-relaxed font-sans antialiased font-medium z-10 relative">
-                Built a modular course system on Supabase with AI writing validation, Elo-based progress tracking, and voice/OCR integration using SwiftUI, Python, and OpenAI API.
+              Portfolio website showcasing my software engineering expertise, federal sector work, AI projects, research, and passion for impactful technology.
               </p>
 
               {/* Skills */}
