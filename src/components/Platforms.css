@@ -1,5 +1,5 @@
 /* src/components/Platforms.css */
-
+/* instead of hiding the platforms when the width is 50%-75%, can you make it stick to the top like when the width is below 50%? also when its 50%-75%, i dont like how much screen space the hero takes up in terms of vertical height. also when the screen is 60% to like 90%, the project section images and description over shadow each other. */
 .platforms-container {
   position: fixed;
   bottom: 2rem;
@@ -23,10 +23,16 @@
   color: #ffffff; /* white on hover */
 }
 
-/* Hide platforms in tablet portrait mode to prevent content overlap */
+/* Make platforms stick to top in tablet portrait mode */
 @media (min-width: 769px) and (max-width: 1024px) {
   .platforms-container {
-    display: none;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    justify-content: left;
   }
 }
 
