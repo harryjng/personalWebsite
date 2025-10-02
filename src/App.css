@@ -20,16 +20,16 @@ height: 100vh;
 overflow: hidden;
 }
 .left-fixed {
-position: sticky;
-top: 0;
-height: 100vh;
-overflow: hidden;
-/* no scrollbars */
-width: 43vw;
-min-width: 400px;
-max-width: 690px;
-/* Ensure the cursor shows it's interactive */
-cursor: grab;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  /* no scrollbars */
+  width: 43vw;
+  min-width: 400px;
+  max-width: 690px;
+  /* Ensure the cursor shows it's interactive */
+  cursor: grab;
 }
 .left-fixed:active {
 cursor: grabbing;
