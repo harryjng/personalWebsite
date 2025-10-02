@@ -9,7 +9,7 @@ export default function Hero() {
       <h1 className="hero-name">Harry Jung</h1>
       <p className="hero-tagline">Software Engineer | Washington DC</p>
       <p className="hero-description">
-        Passionate for building impactful technology. 
+        Passion for building impactful technology. 
       </p>
 
       <Navbar />
