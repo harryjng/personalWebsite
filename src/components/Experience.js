@@ -1,4 +1,5 @@
 import './Experience.css'
+import resumePdf from '../assets/Harry_Jung_ResumeCopy.pdf';
 
 export default function Experience() {
   return (
@@ -498,7 +499,7 @@ Lead Developer for zetapi.tech club website and app; built automated event calen
       
       <div className="resume">
         <a 
-          href="/Harry_Jung_ResumeCopy.pdf" 
+          href={resumePdf} 
           target="_blank" 
           rel="noopener noreferrer"
           className="group/link resume"
